@@ -21,7 +21,7 @@
 No doubt, diabetes remains a chronic health concern that is best managed through prediction of one’s propensity, early diagnosis and preventative care. The PimaDiabetes dataset comprises diagnostic features collected from women of Pima Indian heritage with the ultimate aim of predicting the likelihood of developing Type 2 diabetes given  specific factors such as BMI, glucose level, pregnancies, and other health indicators.
 
 ## Project Objective 
-The goal of the executed analysis is to develop a probabilities model using logistic regress to predict the likelihood of diabetes among Pima Indian women based on demographic and medical factors. It builds on a thorough exploration of the dataset and incorporates feature engineering and advanced statistical modelling to identify associations between health metrics and diabetes outcomes as well as to enhance model accuracy.
+The goal of the executed analysis is to develop a probabilities model using logistic regression to predict the likelihood of diabetes among Pima Indian women based on demographic and medical factors. It builds on a thorough exploration of the dataset and incorporates feature engineering and advanced statistical modelling to identify associations between health metrics and diabetes outcomes as well as to enhance model accuracy.
 
 The project was motivated by a goal to not only highlight the technicalities of data processing and modelling, but to extract actionable, relatable insight. Thus, a key focus is on understanding how pregnancy history correlates with the risk of developing diabetes. 
 
