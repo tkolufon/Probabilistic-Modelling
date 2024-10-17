@@ -41,8 +41,23 @@ The following are the attributes recorded in the dataset.
 8.	Age: age in years
 9.	Outcome: class variable (0 = No diabetes, 1 = Diabetes).
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis (EDA)
+ 
+Extensive exploration of the PimaDiabetes dataset was carried out to uncover the distribution and relationships between variables. Descriptive statistics and visualisations tools including  histograms, boxplots, and correlation heatmaps were used to identify trends and correlations.
+
+Key Observations from EDA:
+•	Glucose Levels and Diabetes: Higher glucose levels were strongly correlated with positive diabetes outcomes (r = 0.47).
+•	BMI Impact: Body Mass Index (BMI) also showed a significant positive correlation with diabetes.
+•	Pregnancy and Age Relationship: A moderate positive correlation was observed between pregnancies and age, suggesting older women had more pregnancies.
+
 
 ## Feature Engineering
 
+An additional feature, ThreeOrMoreKids, was created to differentiate women who had three or more pregnancies from those who had fewer. This binary feature served as a key variable, aiding deeper analysis of how pregnancy history impacts diabetes risk.
+This new feature was particularly crucial for understanding patterns in the data, as subsequent analyses revealed notable differences between women based on this characteristic.
+
 ## Subset Analysis
+
+Using the ThreeOrKids feature, the dataset was split into two subsets, videlicet; 
+- Diab3: represnting women with three or more pregnancies who developed diabetes (Outcome = 1)
+- NonDia3: representing women with three of ore pregnancies who did not develop diabetes (Outcome = 0)
