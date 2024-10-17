@@ -44,14 +44,49 @@ Extensive exploration of the PimaDiabetes dataset was carried out to uncover the
 
 ### Key Observations from EDA:
 •	Glucose Levels and Diabetes: Higher glucose levels were strongly correlated with positive diabetes outcomes (r = 0.47).
+
 •	BMI Impact: Body Mass Index (BMI) also showed a significant positive correlation with diabetes.
+
 •	Pregnancy and Age Relationship: A moderate positive correlation was observed between pregnancies and age, suggesting older women had more pregnancies.
 
 ## Feature Engineering
-An additional feature, ThreeOrMoreKids, was created to differentiate women who had three or more pregnancies from those who had fewer. This binary feature served as a key variable, aiding deeper analysis of how pregnancy history impacts diabetes risk.
-This new feature was particularly crucial for understanding patterns in the data, as subsequent analyses revealed notable differences between women based on this characteristic.
+An additional feature, ThreeOrMoreKids, was created to differentiate women who had three or more pregnancies from those who had fewer. This binary feature served as a key variable, aiding deeper analysis of how pregnancy history impacts diabetes risk as subsequent analyses revealed notable differences between women based on this characteristic. 
+The rationale behind creating this feature stems from research suggesting that a higher number of pregnancies may be correlated with a higher risk of developing diabetes due to gestational diabetes.
 
 ## Subset Analysis
 Using the ThreeOrKids feature, the dataset was split into two subsets, videlicet; 
+
 • Diab3: represnting women with three or more pregnancies who developed diabetes (Outcome = 1)
+
 • NonDia3: representing women with three of ore pregnancies who did not develop diabetes (Outcome = 0)
+
+## Visualisation of Outcomes
+Visualisations were generated to present the distribution of pregnancies and diabetes outcomes.
+
+1. Pregnancies Distribution for Women with Three or More Pregnancies: A histogram was plotted to display the distribution of pregnancies among women with three or more pregnancies.
+
+2. Comparison by Outcome: Separate histograms were created for women with diabetes (Outcome=1) and women without diabetes (Outcome=0), showing distinct distributions between the groups.
+
+3. Boxplot of Pregnancies by Outcome: A boxplot was used to further illustrate the differences in pregnancies between diabetic and non-diabetic women.
+
+## Modelling and Predictions
+A logistic regression model was trained using specific, relevant diagnostic features including BMI, glucose levels, and diabetes pedigree function to predict diabetes outcomes. This regression model was evaluated on its ability to accurately classify whether or not a woman would develop diabetes. 
+
+### Model Accuracy:
+•	The logistic regression model achieved an accuracy of 74%, suggesting that the model generalises reasonably well.
+
+## Key Findings and Insights
+•	Pregnancy and Diabetes Risk: Women with three or more pregnancies showed a higher likelihood of developing diabetes. In particular, women in the Diab3 group had higher pregnancy counts and showed distinct patterns compared to the non-diabetic group.
+
+•	Significant Predictors: Glucose levels and BMI remained the strongest predictors of diabetes. However, the addition of the ThreeOrMoreKids feature provided further insight into lifestyle and demographic factors affecting diabetes risk.
+
+
+•	Risk Differences: Women with fewer pregnancies were less likely to develop diabetes compared to those with a higher pregnancy count, suggesting that pregnancy history might be a useful predictor in medical assessments.
+
+## Conclusion
+In summary, this analysis highlights the relationship between pregnancy history and diabetes risk among women in the PimaDiabetes dataset. The feature ThreeOrMoreKids serves as an informative predictor of diabetes, reinforcing existing medical research that links pregnancy count with the risk of developing diabetes.
+This repository demonstrates the use of feature engineering, subset analysis, and visualisations to derive insights from data and tackle real-world problems. Future analysis may explore additional interactions between variables to further refine predictions of diabetes risk.
+
+## Built With
+
+
