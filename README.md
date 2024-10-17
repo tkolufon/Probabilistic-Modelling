@@ -9,13 +9,13 @@
 | [Feature Engineering](#Feature-Engineering)							|
 | [Subset Analysis](#Subset-Analysis)							|
 | [Visualisatiion of Outcomes](#Visualisatiion-of-Outcomes)					   		|
-| [Modeling and Predictions](#Modeling-and-Predictions)						   	|
+| [Modelling and Predictions](#Modelling-and-Predictions)						   	|
 | [Key Findings and Insights](#Key-Findings-and-Insights)					|
 | [Conclusion](#Conclusion)									|
 | [Built with](#Built-with)							   		|
 
 
-# Probabilistic Modeling for Diabetes Prediction: Feature Engineering and Logistic Regression
+# Probabilistic Modelling for Diabetes Prediction: Feature Engineering and Logistic Regression
 
 ## Introduction
 No doubt, diabetes remains a chronic health concern that is best managed through prediction of one’s propensity, early diagnosis and preventative care. The PimaDiabetes dataset comprises diagnostic features collected from women of Pima Indian heritage with the ultimate aim of predicting the likelihood of developing Type 2 diabetes given  specific factors such as BMI, glucose level, pregnancies, and other health indicators.
@@ -23,7 +23,7 @@ No doubt, diabetes remains a chronic health concern that is best managed through
 ## Project Objective 
 The goal of the executed analysis is to develop a probabilities model using logistic regress to predict the likelihood of diabetes among Pima Indian women based on demographic and medical factors. It builds on a thorough exploration of the dataset and incorporates feature engineering and advanced statistical modelling to identify associations between health metrics and diabetes outcomes as well as to enhance model accuracy.
 
-The project was motivated by a goal to not only highlight the technicalities of data processing and modeling, but to extract actionable, relatable insight. Thus, a key focus is on understanding how pregnancy history correlates with the risk of developing diabetes. 
+The project was motivated by a goal to not only highlight the technicalities of data processing and modelling, but to extract actionable, relatable insight. Thus, a key focus is on understanding how pregnancy history correlates with the risk of developing diabetes. 
 
 ## Dataset Overview 
 The Pima Indians Diabetes dataset consists of medical records collected from 768 female participants aged 21 years and above. This dataset contains 8 predictor variables and 1 binary target variable (‘outcome’), where Outcome = 1 indicates the presence of diabetes and Outcome = 0 represents the absence of diabetes. 
@@ -78,6 +78,7 @@ A logistic regression model was trained using specific, relevant diagnostic feat
 ## Key Findings and Insights
 •	Pregnancy and Diabetes Risk: Women with three or more pregnancies showed a higher likelihood of developing diabetes. In particular, women in the Diab3 group had higher pregnancy counts and showed distinct patterns compared to the non-diabetic group.
 
+
 •	Significant Predictors: Glucose levels and BMI remained the strongest predictors of diabetes. However, the addition of the ThreeOrMoreKids feature provided further insight into lifestyle and demographic factors affecting diabetes risk.
 
 
@@ -88,5 +89,11 @@ In summary, this analysis highlights the relationship between pregnancy history 
 This repository demonstrates the use of feature engineering, subset analysis, and visualisations to derive insights from data and tackle real-world problems. Future analysis may explore additional interactions between variables to further refine predictions of diabetes risk.
 
 ## Built With
-
-
+- JupyterNotebook	
+- Python	   	
+- Pandas		
+- Numpy			
+- Matplotlib	
+- Seaborn
+- Scikit-learn
+- StatsModels
